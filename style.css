@@ -275,6 +275,7 @@ h2+p {
 
 .plus-icon:hover {
     background-image: url(https://i.ibb.co/gmFf6qQ/plus1.png);
+    box-shadow: 0 0 20px 0 #000;
 }
 
 .interface__first-wrapper:last-child {
