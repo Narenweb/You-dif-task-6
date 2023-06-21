@@ -1,505 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.btn {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    color: #ffffff;
-    transition: color 500ms ease-out;
-}
-
-
-.font-18 {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.36;
-}
-
-.font-28 {
-    font-size: 28px;
-    font-weight: 300;
-}
-
-.font-wt-300 {
-    font-weight: 300;
-}
-
-.flex-space-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.txt-center {
-    text-align: center;
-}
-
-/* -----------Header Section----------- */
-header {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-}
-
-header>.container {
-    padding-top: 40px;
-}
-
-header .container>a {
-    padding-left: 81.8px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    line-height: 1;
-}
-
-header ul li {
-    margin-right: 57px;
-
-}
-
-header nav ul li:nth-child(3) {
-    margin-right: 0;
-}
-
-header li a {
-    text-decoration: none;
-    color: white;
-    line-height: 2.6;
-}
-
-header li>button {
-    background-color: #ffcc01;
-    padding: 10px 15px;
-}
-
-li>button:hover,
-.development-content button:hover,
-.gold-clr:hover {
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
-}
-
-/* -----------Hero Section----------- */
-.hero {
-    background-image: linear-gradient(to bottom, #071a2e -40%, rgba(24, 79, 136, 0.3)), url(https://i.ibb.co/KD87Y5G/cytonn-photography-ZJEKICY5-EXY-unsplash.jpg);
-    min-height: 100vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero__wrapper>h1 {
-    text-shadow: 0 0 30px rgba(13, 37, 62, 0.7);
-    font-size: 46px;
-    line-height: 1.17;
-    color: #ffffff;
-}
-
-.hero__wrapper button {
-    padding: 20px 39px;
-    background-color: #1e88f5;
-    margin-top: 57px;
-}
-
-.hero__wrapper button:hover,
-.blue-clr:hover {
-    box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
-}
-
-/* -----------Interface Section----------- */
-.container>h2 {
-    margin-top: 151px;
-    font-size: 38px;
-    color: #0d253e;
-}
-
-h2+p {
-    margin-top: 27px;
-    opacity: 0.4;
-    font-size: 22px;
-    color: #0d253e;
-}
-
-.interface__first-wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-}
-
-.interface__first-wrapper>h4 {
-    padding-top: 40px;
-    color: #1e88f5;
-}
-
-.interface__first-wrapper h5 {
-    color: #0d253e;
-}
-
-.interface__first-wrapper p {
-    margin-top: 4px;
-    opacity: 0.4;
-    color: #0d253e;
-}
-
-.icon-wrapper {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    position: relative;
-}
-
-.icon-wrapper:nth-of-type(3) {
-    margin-bottom: 0;
-}
-
-.icon-wrapper:nth-child(4) {
-    margin: 33px 0 0;
-}
-
-.oval {
-    width: 150px;
-    height: 150px;
-    background-color: #f4f8fc;
-    border-radius: 50%;
-    transition: transform 200ms ease-in;
-    position: relative;
-}
-
-.oval:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.index-position {
-    position: relative;
-    z-index: 1;
-}
-
-.blue-oval {
-    background-color: #1e88f5;
-}
-
-.small-img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-}
-
-.border-dotted {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    right: 0;
-    border: 4px solid #e8edf2;
-    border-style: dotted;
-}
-
-.dotted-line {
-    height: 140px;
-    border-left: none;
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
-    border-block-end-width: 0;
-}
-
-.dotted-line1 {
-    height: 120px;
-    top: -30%;
-    left: 0;
-    width: 96%;
-    border-bottom-left-radius: 100px;
-    border-top-left-radius: 100px;
-    border-right: none;
-    border-bottom: none;
-}
-
-.dotted-line1::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 4%;
-    width: 80%;
-    border: 4px solid #e8edf2;
-    border-style: dotted;
-    border-top: none;
-}
-
-.icon {
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    transform: translate(50%, -50%);
-    width: 40px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
-    transition: opacity 0.3s ease-in-out;
-
-}
-
-.plus-icon {
-    background-size: cover;
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    transform: translate(50%, -50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-image: url(https://i.ibb.co/z8M5v1y/plus.png);
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
-    transition: opacity 0.3s ease-in-out;
-}
-
-.plus-icon:hover {
-    background-image: url(https://i.ibb.co/gmFf6qQ/plus1.png);
-}
-
-.interface__first-wrapper:last-child {
-    margin-top: 29px;
-}
-
-/* -----------Development Section----------- */
-.development {
-    margin-top: 173px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/F711VYS/aubrey-odom-ITzfg-P77-DTg-unsplash.jpg');
-    height: 570px;
-    background-size: cover;
-}
-
-.development>.container {
-    position: relative;
-}
-
-.development h2 {
-    text-shadow: 20px 20px 50px #0d253e;
-    font-size: 46px;
-    font-weight: 400;
-    color: #f4f3f3;
-    padding-top: 200px;
-}
-
-.card {
-    position: relative;
-    bottom: 30px;
-    left: 35px;
-    padding: 40px 50px 40px 50px;
-    border-radius: 4px;
-    box-shadow: 0 0 60px 10px rgba(13, 37, 62, 0.1);
-    background-color: #ffffff;
-    transition: transform 500ms ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.1, 1.1);
-    background-color: #ffcc01;
-}
-
-.card:nth-child(2),
-.card:nth-child(3) {
-    margin-top: 20px;
-}
-
-.card:hover h3,
-.card:hover p {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.card h3 {
-    font-size: 30px;
-    color: #0d253e;
-}
-
-.card p {
-    margin-top: 21px;
-    opacity: 0.4;
-    font-size: 20px;
-    line-height: 1.45;
-    color: #0d253e;
-}
-
-.development-content button {
-    margin-top: 30px;
-    padding: 20px 39px;
-    background-color: #ffcc01;
-}
-
-/* -----------Budget Section----------- */
-.budget-cards {
-    margin-top: 95px;
-}
-
-.selection-card {
-    width: 510px;
-    border-radius: 4px;
-    box-shadow: 0 2px 30px 0 rgba(30, 136, 245, 0.3);
-    color: #ffffff;
-}
-
-.card__wrapper {
-    width: 510px;
-    background-color: #1e88f5;
-    padding: 56px 158px 27px 160px;
-}
-
-.gold-clr,
-.gold {
-    background-color: #ffcc01;
-}
-
-
-.selection-card h4 {
-    letter-spacing: 6px;
-    color: #ffffff;
-}
-
-.selection-card h3 {
-    margin-top: 8px;
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #ffffff;
-}
-
-h3>span {
-    font-size: 20px;
-}
-
-.card__wrapper p {
-    line-height: 1.67;
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-.icon__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    padding: 56px 18px 0 70px;
-    position: relative;
-}
-
-.check-img {
-    width: 24px;
-    height: 16px;
-    margin: 7px 30px 7px 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.yellow-check {
-    background-image: url(https://i.ibb.co/b1dY9x9/check-2.png);
-}
-
-.blue-check {
-    background-image: url(https://i.ibb.co/MpD1hNx/check-1.png);
-}
-
-.icon__wrapper p {
-    opacity: 0.9;
-    font-size: 22px;
-    color: #0d253e;
-
-}
-
-.selection-card button {
-    margin: 61px 0 60px;
-    padding: 20px 51px;
-    box-shadow: 0 0 20px 0 rgba(30, 136, 245, 0.4);
-}
-
-.blue-clr {
-    background-color: #1e88f5;
-}
-
-.budget .icon-wrapper {
-    margin-top: 100px;
-}
-
-hr {
-    margin-top: 139px;
-    border: solid 1px #eee;
-}
-
-/* -----------Footer Section----------- */
-footer>.container {
-    margin-top: 75px;
-    padding-bottom: 76px;
-}
-
-footer .container>a {
-    padding: 20px 0 0 81.8px;
-    opacity: 0.25;
-    color: #0d253e;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer li a {
-    opacity: 0.30;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #0d253e;
-    text-decoration: none;
-    transition: transform 500ms ease-out;
-}
-
-footer nav ul {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.flex li:nth-child(2) a {
-    margin-left: 110px;
-}
-
-.flex li:nth-child(3) a {
-    margin-left: 74px;
-}
-
-.flex li:nth-child(4) a {
-    margin-left: 10px;
-}
-
-footer ul li {
-    list-style: none;
-    margin-right: 20px;
-    line-height: 2.3;
-}
-
-footer ul li:nth-child(4) {
-    margin-right: 0;
-}
-
-footer a:hover {
-    color: rgb(43, 57, 124);
-    opacity: 0.50;
-    text-shadow: 2px 2px 10px;
-    transform: scale(1.2, 1.2);
-}
-
-footer li:hover {
-    transform: scale(1.1, 1.2);
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Dif</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container flex-space-between">
+            <a href="javascript:void(0)">YOU DIF</a>
+            <nav>
+                <ul class="font-wt-300">
+                    <li class="font-18"><a href="javascript:void(0)">QUI SOMMES-NOUS</a></li>
+                    <li class="font-18"><a href="javascript:void(0)">CONTACT</a></li>
+                    <li><button class="btn font-18">CONNEXION</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__wrapper txt-center">
+            <h1 class="font-wt-300">Lorem Ipsum,<br>
+                is simply dummy text of the printing.</h1>
+            <button class="btn">DIFFUSER MON ANNONCE</button>
+        </div>
+    </section>
+    <section class="interface txt-center">
+        <div class="container">
+            <h2 class="font-wt-300">Notre interface tout en un, 100% web</h2>
+            <p class="font-wt-300">There are many variations of passages of Lorem Ipsum available,<br>
+                but the majority have suffered alteration in some form.</p>
+            <div class="interface__first-wrapper">
+                <h4 class="font-28">Bien disponible</h4>
+                <div class="annonce__wrapper">
+                    <h5 class="font-28">Saisie d’annonces</h5>
+                    <p class="font-18">Lorem Ipsum is simply<br>
+                        dummy text.</p>
+                </div>
+                <div class="verification__wrapper">
+                    <h5 class="font-28">Vérification</h5>
+                    <p class="font-18">Lorem Ipsum is simply<br>
+                        dummy text.</p>
+                </div>
+            </div>
+            <div class="icon-wrapper">
+                <div class="dotted-line border-dotted"></div>
+                <div class="oval blue-oval index-position">
+                    <img src="https://i.ibb.co/Yf7XxWC/blue-domed-church-1.png" alt="blue_img" class="small-img">
+                </div>
+                <div class="oval index-position">
+                    <img src="https://i.ibb.co/GRpZdcB/notes.png" alt="" class="small-img">
+                </div>
+                <div class="oval index-position">
+                    <img src="https://i.ibb.co/FJVzXDy/notes-1.png" alt="" class="small-img">
+                    <div class="plus-icon"></div>
+                </div>
+            </div>
+            <div class="icon-wrapper">
+                <div class="dotted-line1 border-dotted"></div>
+                <div class="oval index-position">
+                    <img src="https://i.ibb.co/xXbDM00/Adobe-Stock-576683060-Preview-1.png" alt="arrow_img"
+                        class="small-img">
+                    <div class="plus-icon"></div>
+                </div>
+                <div class="oval index-position">
+                    <img src="https://i.ibb.co/NWQH5xK/clock.png" alt="" class="small-img">
+                </div>
+                <div class="oval blue-oval index-position">
+                    <img src="https://i.ibb.co/Qb6qD9p/user.png" alt="" class="small-img">
+                </div>
+            </div>
+            <div class="interface__first-wrapper">
+                <div class="annonce__wrapper">
+                    <h5 class="font-28">Multidiffusion</h5>
+                    <p class="font-18">Lorem Ipsum is simply<br>
+                        dummy text.</p>
+                </div>
+                <div class="verification__wrapper">
+                    <h5 class="font-28">Suivi & Gestion</h5>
+                    <p class="font-18">Lorem Ipsum is simply<br>
+                        dummy text.</p>
+                </div>
+                <h4 class="font-28">Nouveaux contacts</h4>
+            </div>
+
+        </div>
+    </section>
+    <section class="development">
+        <div class="container flex-space-between">
+            <div class="development-content">
+                <h2 class="font-wt-300">L’efficacité au centre<br>
+                    de notre préoccupation</h2>
+                <button class="btn">DIFFUSER MON ANNONCE</button>
+            </div>
+            <div class="development__card">
+                <div class="card">
+                    <h3 class="font-wt-300">Simple</h3>
+                    <p class="font-wt-300">There are many variations of passages of Lorem Ipsum<br>
+                        available, but the majority have suffered alteration.</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-wt-300">Sur-mesure</h3>
+                    <p class="font-wt-300">There are many variations of passages of Lorem Ipsum<br>
+                        available, but the majority have suffered alteration.</p>
+                </div>
+                <div class="card">
+                    <h3 class="font-wt-300">Performant</h3>
+                    <p class="font-wt-300">There are many variations of passages of Lorem Ipsum<br>
+                        available, but the majority have suffered alteration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="budget txt-center">
+        <div class="container">
+            <h2 class="font-28 font-28">Une totale maîtrise de votre budget</h2>
+            <p class="font-18">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered
+                alteration.</p>
+            <div class="budget-cards flex-space-between">
+                <div class="selection-card">
+                    <div class="card__wrapper ">
+                        <h4 class="font-28 txt-center">SELECTION</h4>
+                        <h3 class="txt-center">5€ <span>HT</span></h3>
+                        <p class="font-18  font-wt-300">Par mois / par annonce</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="blue-check  check-img"></div>
+                        <p class="font-18">Saisie simplifiée</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="blue-check  check-img"></div>
+                        <p class="font-18">Diffusion sur les sites selectionnés</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="blue-check  check-img"></div>
+                        <p class="font-18">Suivi & gestion de l’annonce</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="blue-check  check-img"></div>
+                        <p class="font-18">Vérification de l’annonce<br>
+                            20€ HT par annonce</p>
+                    </div>
+                    <button class="btn blue-clr">CHOISIR L’OFFRE SELECTION</button>
+                </div>
+                <!-- Next-card -->
+                <div class="selection-card mt-29">
+                    <div class="card__wrapper gold">
+                        <h4 class="font-28 txt-center">SELECTION</h4>
+                        <h3 class="txt-center">5€ <span>HT</span></h3>
+                        <p class="font-18  font-wt-300">Par mois / par annonce</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="check-img yellow-check"></div>
+                        <p class="font-wt-300">Saisie simplifiée</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="check-img yellow-check"></div>
+                        <p class="font-18 font-wt-300">Diffusion sur les sites selectionnés</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="check-img yellow-check"></div>
+                        <p class="font-18 font-wt-300">Suivi & gestion de l’annonce</p>
+                    </div>
+                    <div class="icon__wrapper">
+                        <div class="check-img yellow-check"></div>
+                        <p class="font-18 font-wt-300">Vérification de l’annonce<br>
+                            20€ HT par annonce</p>
+                    </div>
+                    <button class="btn gold-clr">CHOISIR L’OFFRE SELECTION</button>
+                </div>
+            </div>
+            <div class="icon-wrapper">
+                <div class="oval index-position">
+                    <img src="https://i.ibb.co/4W2STGr/piggybank.png" alt="piggy_img" class="small-img">
+                    <div class="plus-icon"></div>
+
+                </div>
+                <div class="oval">
+                    <img src="https://i.ibb.co/Ms1Lrrq/notes-3.png" alt="" class="small-img">
+                </div>
+                <div class="oval index-position">
+                    <img src="https://i.ibb.co/kJQJnFx/save-money.png" alt="arrow_img" class="small-img">
+                    <div class="plus-icon"></div>
+                </div>
+            </div>
+            <div class="interface__first-wrapper">
+                <div class="annonce__wrapper">
+                    <h5 class="font-28">Économique</h5>
+                    <p class="font-18">There are many variations<br>
+                        of passages of Lorem <br>
+                        Ipsum available.</p>
+                </div>
+                <div class="verification__wrapper">
+                    <h5 class="font-28">Maîtrise</h5>
+                    <p class="font-18">There are many variations<br>
+                        of passages of Lorem <br>
+                        Ipsum available.</p>
+                </div>
+                <div class="verification__wrapper">
+                    <h5 class="font-28">Dégressif</h5>
+                    <p>There are many variations<br>
+                        of passages of Lorem <br>
+                        Ipsum available.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <footer>
+        <div class="container flex-space-between">
+            <a href="javascript:void(0)" class="font-28">YOU DIF</a>
+            <div class="footer__wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="font-18">QUI SOMMES-NOUS ?</a></li>
+                        <li><a href="javascript:void(0)" class="font-18">CONNEXION</a></li>
+                        <li><a href="javascript:void(0)" class="font-18">RECRUTEMENT</a></li>
+                        <li><a href="javascript:void(0)" class="font-18">CONFIDENTIALITÉ</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="javascript:void(0)" class="font-18">CONTACT</a></li>
+                        <li><a href="javascript:void(0)" class="font-18">FAQ</a></li>
+                        <li><a href="javascript:void(0)" class="font-18">FOURNISSEUR</a></li>
+                        <li><a href="javascript:void(0)" class="font-18">CGU</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
