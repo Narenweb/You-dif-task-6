@@ -76,7 +76,7 @@ header nav ul {
 
 header ul li {
     margin-right: 57px;
-  
+
 }
 
 header nav ul li:nth-child(3) {
@@ -86,40 +86,18 @@ header nav ul li:nth-child(3) {
 header li a {
     text-decoration: none;
     color: white;
-    transition: transform 500ms ease-out;
     line-height: 2.6;
-}
-
-header a:hover,
-header li:hover {
-    transform: scale(1.2, 1.2);
 }
 
 header li>button {
     background-color: #ffcc01;
     padding: 10px 15px;
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
 }
 
 li>button:hover,
-.development-content button:hover {
-    background-color: aqua;
-    box-shadow: 0 0 20px 0 aqua;
-    color: #000;
-}
-
-header>.container a::after {
-    content: '';
-    width: 0;
-    display: block;
-    background-color: aqua;
-    height: 2px;
-    margin: 0 auto;
-    transition: width 500ms ease-in-out;
-}
-
-header>.container a:hover::after {
-    width: 100%;
+.development-content button:hover,
+.gold-clr:hover {
+    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
 }
 
 /* -----------Hero Section----------- */
@@ -141,15 +119,13 @@ header>.container a:hover::after {
 
 .hero__wrapper button {
     padding: 20px 39px;
-    box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
     background-color: #1e88f5;
     margin-top: 57px;
 }
 
 .hero__wrapper button:hover,
 .blue-clr:hover {
-    background-color: #a50d0d;
-    box-shadow: none;
+    box-shadow: 0 0 30px 0 rgba(30, 136, 245, 0.9);
 }
 
 /* -----------Interface Section----------- */
@@ -224,19 +200,12 @@ h2+p {
     background-color: #1e88f5;
 }
 
-.blue-img {
-    padding-top: 25px;
-    width: 100px;
-}
-
-.notes-img {
-    padding-top: 30px;
-    width: 80px;
-}
-
-.check-img {
-    padding-top: 13px;
-    width: 120px;
+.small-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
 }
 
 .border-dotted {
@@ -289,8 +258,23 @@ h2+p {
     transition: opacity 0.3s ease-in-out;
 
 }
-.icon:hover {
-    opacity: 0.7;
+
+.plus-icon {
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(https://i.ibb.co/z8M5v1y/plus.png);
+    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.plus-icon:hover {
+    background-image: url(https://i.ibb.co/gmFf6qQ/plus1.png);
 }
 
 .interface__first-wrapper:last-child {
@@ -319,17 +303,27 @@ h2+p {
 
 .card {
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     left: 35px;
-    padding: 55px 69px 55px 59px;
+    padding: 40px 50px 40px 50px;
     border-radius: 4px;
     box-shadow: 0 0 60px 10px rgba(13, 37, 62, 0.1);
     background-color: #ffffff;
     transition: transform 500ms ease-in-out;
 }
-.card:hover,.card>h3:hover,.card>p:hover{
-    transform: scale(1.1,1.1);
-    background-color: #E7CEA6;
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #ffcc01;
+}
+
+.card:nth-child(2),
+.card:nth-child(3) {
+    margin-top: 20px;
+}
+
+.card:hover h3,
+.card:hover p {
     color: #ffffff;
     opacity: 1;
 }
@@ -350,7 +344,6 @@ h2+p {
 .development-content button {
     margin-top: 30px;
     padding: 20px 39px;
-    box-shadow: 0 0 20px 0 rgba(254, 203, 1, 0.4);
     background-color: #ffcc01;
 }
 
@@ -372,13 +365,11 @@ h2+p {
     padding: 56px 158px 27px 160px;
 }
 
-.gold-clr {
+.gold-clr,
+.gold {
     background-color: #ffcc01;
 }
 
-.gold-clr:hover {
-    background-color: #000;
-}
 
 .selection-card h4 {
     letter-spacing: 6px;
@@ -407,18 +398,30 @@ h3>span {
     display: flex;
     justify-content: flex-start;
     padding: 56px 18px 0 70px;
+    position: relative;
 }
 
-.icon__wrapper img {
+.check-img {
     width: 24px;
     height: 16px;
     margin: 7px 30px 7px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.yellow-check {
+    background-image: url(https://i.ibb.co/b1dY9x9/check-2.png);
+}
+
+.blue-check {
+    background-image: url(https://i.ibb.co/MpD1hNx/check-1.png);
 }
 
 .icon__wrapper p {
     opacity: 0.9;
     font-size: 22px;
     color: #0d253e;
+
 }
 
 .selection-card button {
@@ -437,7 +440,7 @@ h3>span {
 
 hr {
     margin-top: 139px;
-    border: solid 2px #eee;
+    border: solid 1px #eee;
 }
 
 /* -----------Footer Section----------- */
