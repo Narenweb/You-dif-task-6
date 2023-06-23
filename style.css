@@ -50,22 +50,22 @@
 }
 
 .btn-lg {
-    margin: 61px 0 60px;
+    margin-top: 61px;
     padding: 20px 51px;
 }
 
-.font-18 {
+.font-sm {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.36;
 }
 
-.font-22 {
+.font-md {
     font-size: 22px;
     font-weight: 300;
 }
 
-.font-28 {
+.font-lg {
     font-size: 28px;
     font-weight: 300;
 }
@@ -142,8 +142,10 @@ header li a {
 }
 
 /* -----------Interface Section----------- */
-.container>h2 {
+.interface{
     margin-top: 151px;
+}
+.container>h2 {
     font-size: 38px;
     color: #0d253e;
 }
@@ -241,7 +243,7 @@ h2+p {
 }
 
 .dotted-line1 {
-    height: 120px;
+    height: 140px;
     top: -30%;
     left: 0;
     width: 96%;
@@ -329,7 +331,7 @@ h2+p {
 }
 
 .card:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.03, 1.05);
     background-color: #ffcc01;
 }
 
@@ -359,6 +361,9 @@ h2+p {
 
 
 /* -----------Budget Section----------- */
+.budget{
+        margin-top: 151px;
+}
 .budget-cards {
     margin-top: 95px;
 }
@@ -403,7 +408,7 @@ h3>span {
 }
 
 .card__body {
-    padding: 40px 50px 0 50px;
+    padding: 40px 50px 60px 50px;
 }
 
 .card__text {
